@@ -1,0 +1,15 @@
+apply plugin: 'idea'
+apply plugin: 'groovy'
+apply plugin: 'application'
+
+repositories {
+    mavenCentral()
+}
+
+mainClassName = 'SecondBingScript'
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.2.1'
+    compile 'org.gebish:geb-core:0.9.2'
+    compile 'org.seleniumhq.selenium:selenium-firefox-driver:2.39.0'
+}
